@@ -1,2 +1,83 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #1C1D1D;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 20px 45px;
+}
+
+header #logo{
+    background-color: lightblue;
+
+    display: flex;
+    align-items: center;
+}
+
+header #logo img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+header #logo p{
+    color: #cecece;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header ul{
+    background-color: lightcoral;
+
+    display: flex;
+    gap: 20px;
+
+    list-style-type: none;
+}
+
+header ul a{
+    color: #ff9d0b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header #login{
+    background-color: lightgreen;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header #login a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header form{
+    background-color: lightsalmon;
+
+    display: flex;
+    align-items: center;
+}
+
+header input{
+    border-radius: 8px;
+    border: 1px solid #1C1D1D;
+    padding: 0 5px;
+    height: 35px;
+}
