@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*CONFIGURAÇÕES GERAIS*/
 *{
     margin: 0;
     padding: 0;
@@ -14,24 +15,153 @@ body{
     max-height: 100vh;
 }
 
+header, main, footer{
+    border: 3px solid green
+}
 
 
 
 /*HEADER*/
 header{
+    background-color: #1E1E1E;
 }
 
 .top-bar{
-    border: 3px solid blue;
-    height: 250px;
+    /*border: 3px solid blue;*/
+    text-align: center;
+    padding: 15px 0;
 
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5px;
-    align-items: center;
+    display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .logo, .nav-bar, .user-options{
-    border: 3px solid red;
+    /*border: 3px solid red;*/
+
+    width: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.logo img{
+    width: 45px;
+}
+
+.nav-bar a{
+    color: #ed9a00;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.user-options a{
+    color: white;
+    text-decoration: none;
+}
+
+.user-options input{
+    height: 30px;
+    padding-left: 5px;
+
+    border-radius: 5px;
+    border: 1px solid #ed9a00;
+}   
+
+.user-options button{
+    cursor: pointer;
+
+    background-color: #1E1E1E;
+    border: 1px solid #1E1E1E;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+/*ARTICLES*/
+article{
+    border: 3px solid tomato;
+}
+
+section{
+    border: 3px solid turquoise;
+
+    width: 38%;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+}
+
+.product-images{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+}
+
+.product-images .big-pic img{
+    width: 520px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.222);
+}
+
+.product-images .small-pics img{
+    width: 60px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.222);
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1024px){
+    .top-bar{
+        flex-flow: column;
+        gap: 8px;
+    }
+
+    .logo, .nav-bar, .user-options{
+        width: 100%;
+        gap: 2px;
+    }
 }
