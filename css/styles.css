@@ -101,28 +101,24 @@ section{
     justify-content: center;
 }
 
-.product-images{
+.gallery{
     display: flex;
     flex-flow: column wrap;
-    gap: 8px;
+    gap: 10px;
 }
 
-.product-images .big-pic img{
+.gallery .big-pic img{
     width: 520px;
     border-radius: 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.222);
 }
 
-.product-images .small-pics img{
+.gallery .small-pics img{
     width: 60px;
     border-radius: 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.222);
     margin-right: 5px;
 }
-
-
-
-
 
 
 
