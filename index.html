@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <div class="top-bar">
+        <section class="top-bar">
             <div class="logo">
                 <img src="images/logo.png" alt="Logo TechStore">
                 <h1>TechStore</h1>
@@ -30,36 +30,37 @@
                     <i class="fas fa-user"></i>
                     login / cadastro
                 </a>
-                <form action="#">
-                    <input type="text" placeholder="Buscar produto" required>
-                    <button>
-                        <i class="fas fa-search"></i>
-                    </button>
+                <input type="text" placeholder="Buscar produto" required>
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
                 </form>
             </div>
-        </div>
+        </section>
     </header>
-
 
 
 
     <main>
         <article class="product-details">
             <section class="gallery">
-                <div class="big-pic">
-                    <img src="images/fone_destaque.png" alt="Fone Bluetooth Preto">
+                <div class="bic-pic">
+                    <img src="images/fone_destaque.png" alt="Fone de Ouvido Bluetooth Preto">
                 </div>
 
                 <div class="small-pics">
-                    <img src="images/fone1.png" alt="Fone Bluetooth Preto">
-                    <img src="images/fone2.png" alt="Fone Bluetooth Branco">
-                    <img src="images/fone3.png" alt="Fone Bluetooth Cinza">
+                    <img src="images/fone1.png" alt="Fone de Ouvido Bluetooth Preto">
+                    <img src="images/fone2.png" alt="Fone de Ouvido Bluetooth Branco">
+                    <img src="images/fone3.png" alt="Fone de Ouvido Bluetooth Cinza">
                 </div>
             </section>
 
             <section class="info">
                 <div class="details">
-                    <p class="path">> Tecnologia / Fones / Sem Fio</p>
+                    <p class="path">
+                        <i class="fas fa-chevron-right"></i>
+                        Tecnologia / Fones / Sem Fio
+                    </p>
                     <h1>Fone de Ouvido Bluetooth - Preto</h1>
                     <p class="code">Código do Produto: 98765XYZ</p>
                     <p class="price">R$350,00</p>
@@ -71,37 +72,44 @@
                         <i class="fas fa-star-half-alt"></i>
                         45 avaliações
                     </p>
-                    <p class="description">Aproveite uma experiência sonora única com nossos fones de ouvido Bluetooth. Design moderno, leve e ideal para qualquer ocasião. Sons nítidos e graves potentes que elevam sua música a um novo patamar.</p>
+                    <p class="description">
+                        Aproveite uma experiência sonora única com nossos fones de ouvido Bluetooth. Design moderno, leve e ideal para qualquer ocasião. Sons nítidos e graves potentes que elevam a sua música a um novo patamar.
+                    </p>
                 </div>
-
+                
                 <div class="buy-options">
-                    <form action="#">
+                    <div class="options">
                         <label for="color">Cor:</label>
                         <select name="color" id="color">
                             <option value="Preto">Preto</option>
                             <option value="Branco">Branco</option>
                             <option value="Cinza">Cinza</option>
                         </select>
-                        
                         <label for="quantity">Quantidade:</label>
                         <input type="number" name="quantity" id="quantity" required>
+                    </div>
 
-                        <div class="buttons">
-                            <button class="add-to-cart">
-                                <i class="fas fa-shopping-cart"></i>
-                                Adicionar ao carrinho
-                            </button>
+                    <div class="buttons">
+                        <button class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao carrinho
+                        </button>
 
-                            <button class="add-to-wishlist">
-                                <i class="fas fa-heart"></i>
-                                Adicionar à lista de desejos
-                            </button>
-                        </div>
-                    </form>
+                        <button class="add-wishlist">
+                            <i class="fas fa-heart"></i>
+                            Adicionar à lista de desejos
+                        </button>
+                    </div>
+
+                    <p class="delivery-time">
+                       <i class="fas fa-truck"></i>
+                       Estimativa de Entrega: Consulte nossos <a href="#">Termos e Condições</a>
+                    </p>
                 </div>
             </section>
         </article>
     </main>
+
 
 
 
