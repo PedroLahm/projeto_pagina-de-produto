@@ -30,10 +30,11 @@
                     <i class="fas fa-user"></i>
                     login / cadastro
                 </a>
-                <input type="text" placeholder="Buscar produto" required>
-                <button>
-                    <i class="fas fa-search"></i>
-                </button>
+                <form action="#">
+                    <input type="text" placeholder="Buscar produto" required>
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
             </div>
         </section>
@@ -78,28 +79,29 @@
                 </div>
                 
                 <div class="buy-options">
-                    <div class="options">
-                        <label for="color">Cor:</label>
-                        <select name="color" id="color">
-                            <option value="Preto">Preto</option>
-                            <option value="Branco">Branco</option>
-                            <option value="Cinza">Cinza</option>
-                        </select>
-                        <label for="quantity">Quantidade:</label>
-                        <input type="number" name="quantity" id="quantity" required>
-                    </div>
-
-                    <div class="buttons">
-                        <button class="add-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            Adicionar ao carrinho
-                        </button>
-
-                        <button class="add-wishlist">
-                            <i class="fas fa-heart"></i>
-                            Adicionar à lista de desejos
-                        </button>
-                    </div>
+                    <form action="#">
+                        <div class="options">
+                            <label for="color">Cor:</label>
+                            <select name="color" id="color">
+                                <option value="Preto">Preto</option>
+                                <option value="Branco">Branco</option>
+                                <option value="Cinza">Cinza</option>
+                            </select>
+                            <label for="quantity">Quantidade:</label>
+                            <input type="number" name="quantity" id="quantity" required>
+                        </div>
+                        
+                        <div class="buttons">
+                            <button class="add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                Adicionar ao carrinho
+                            </button>
+                            <button class="add-wishlist">
+                                <i class="fas fa-heart"></i>
+                                Adicionar à lista de desejos
+                            </button>
+                        </div>
+                    </form>
 
                     <p class="delivery-time">
                        <i class="fas fa-truck"></i>
@@ -108,13 +110,31 @@
                 </div>
             </section>
         </article>
+
+
+        <article class="sec-info">
+            <div class="product-specs">
+                <ul class="tabs">
+                    <li><i class="fas fa-info-circle"></i>Detalhes</li>
+                    <li><i class="fas fa-undo"></i>Devolução</li>
+                    <li><i class="fas fa-shipping-fast"></i>Entrega</li>
+                </ul>
+            </div>
+
+            <div class="specs-content">
+                <p><b>SKU: </b>TECH98765</p>
+                <p><b>Material Externo: </b>Plástico ABS</p>
+                <p><b>Tempo de Bateria: </b>Até 20 horas</p>
+                <p><b>Conectividade: </b>Bluetooth 5.0</p>
+            </div>
+        </article>
     </main>
 
 
 
 
     <footer>
-
+        <p>Pedro Lahm &copy 2025 - Todos os direitos reservados</p>
     </footer>
 
 </body>

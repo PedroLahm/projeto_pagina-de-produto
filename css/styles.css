@@ -31,7 +31,7 @@ header{
 .top-bar{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 15px 0;
 
     display: flex;
     align-items: center;
@@ -50,6 +50,7 @@ header{
 
 .logo h1{
     font-size: 2em;
+    margin-bottom: 0;
 }
 
 /*Nav Bar*/
@@ -96,6 +97,7 @@ header{
     background-color: #1e1e1e;
     border: 1px solid #1e1e1e;
     color: #e0e0e0;
+    cursor: pointer;
 }
 
 
@@ -181,6 +183,12 @@ h1{
     gap: 20px;
 }
 
+.buy-options form{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
 .options{
     display: flex;
     flex-direction: column;
@@ -249,6 +257,49 @@ h1{
     text-decoration: underline;
 }
 
+/*Secondary Info*/
+.sec-info{
+    background-color: #1e1e1e;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: .9rem;
+}
+
+.product-specs{
+    margin-bottom: 10px;
+}
+
+.tabs{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    border-bottom: 1px solid #333;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.tabs li{
+    color: #777;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.specs-content p{
+    margin-bottom: 10px;
+}
+
+
+
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    color: #777;
+    padding: 10px;
+    font-size: .9rem;
+}
+
 /*Menu Responsivo*/
 @media(max-width: 1024px){
     .top-bar{
@@ -259,5 +310,20 @@ h1{
 
     .logo h1{
         margin-top: 0;
+    }
+
+    .product-details{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 425px){
+
+    .buttons{
+        flex-direction: column;
+    }
+
+    .tabs li{
+        font-size: .8rem;
     }
 }
